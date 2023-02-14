@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application AG2</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="Apellido">Apellido:</string>
+    <string name="Edad">Edad:</string>
+    <string name="Linea">Rayita</string>
+    <string name="Botton">Boton</string>
+    <string name="Titulo">Poyecto2</string>
+</resources>
