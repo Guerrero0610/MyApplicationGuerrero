@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Ma_5">#F39C12</color>
+    <color name="Ma_6">#FAD7A0</color>
+    <color name="Ma_7">#B03A2E</color>
+    <color name="Ma_8">#F1948A</color>
+    <color name="Ma_9">#566573 </color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Ma_1">#BA4A00</color>
+    <color name="Ma_2">#E59866</color>
+    <color name="Ma_3">#6E2C00</color>
+    <color name="Ma_4">#A93226</color>
+
+</resources>

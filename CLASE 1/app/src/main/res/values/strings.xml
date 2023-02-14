@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rayita</string>
+    <string name="botonDos">Sensor</string>
+    <string name="tituloUno">Bienvenido</string>
+    <string name="Espacio">Nueva</string>
+    <string name="name">Nuevo</string>
+</resources>
