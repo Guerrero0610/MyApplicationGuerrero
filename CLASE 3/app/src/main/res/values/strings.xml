@@ -8,4 +8,6 @@
     <string name="Calcular">CLICK PARA CALCULAR LADOS:</string>
     <string name="SeCalculaB">Respuesta</string>
     <string name="SeCalculaA">Respuesta</string>
+    <string name="BuscarG">Buscar Google</string>
+    <string name="Llamar">Llama</string>
 </resources>

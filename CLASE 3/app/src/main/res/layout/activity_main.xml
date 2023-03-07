@@ -11,6 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/APP_LADOS"
         android:text="@string/APP_LADOS"
         android:textSize="30sp"
         android:textAlignment="center" >
@@ -27,6 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:id="@+id/LadoOne"
             android:text="@string/Lado1"
             android:textSize="20sp"
             android:textAlignment="center">
@@ -37,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:layout_marginLeft="80sp"
+            android:id="@+id/IngreseOne"
             android:text="@string/IngresaPrimero"
             android:textAlignment="center">
 
@@ -51,6 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:id="@+id/LAdotwo"
             android:text="@string/Lado2"
             android:textSize="20sp"
             android:textAlignment="center">
@@ -61,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:layout_marginLeft="80sp"
+            android:id="@+id/Ingresetwo"
             android:text="@string/IngresaSegundo"
             android:textAlignment="center">
 
@@ -75,6 +80,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/Calculemos"
             android:text="@string/Calcular"
             android:textSize="20sp"
             android:textAlignment="center" >
@@ -91,7 +97,42 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:id="@+id/Darle"
             android:text="@string/Bottones"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Busca"
+            android:text="@string/BuscarG"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Llamamos"
+            android:text="@string/Llamar"
             android:textSize="20sp"
             android:textAlignment="center">
 
