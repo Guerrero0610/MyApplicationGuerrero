@@ -43,7 +43,24 @@ Button Bottones, BuscarG, Llamar;
         Calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Parte2EnviarDatos(view);
 
+            }
+        });
+        BuscarG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                VamosaGoogle(view);
+            }
+        });
+        Llamar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
+                VamosaLlamada.setData(Uri.parse("tel" + Llamar));
+                    if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
+                        startActivity(VamosaLlamada);
+                    }
             }
         });
     }
@@ -76,5 +93,30 @@ Button Bottones, BuscarG, Llamar;
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "Entré a OnDestroy");
+    }
+    public void Parte2EnviarDatos(View view) {
+
+        float result = Float.parseFloat(IngresaSegundo.getText().toString()) * Float.parseFloat(IngresaPrimero.getText().toString());
+        String resultlado1 = IngresaPrimero.getText().toString();
+        String resultlado2 = IngresaSegundo.getText().toString();
+        Intent pasarDato = new Intent(this, Pantalla_2.class);
+        pasarDato.putExtra("elresultado", String.valueOf(result));
+        pasarDato.putExtra("Llamarlado1", resultlado1);
+        pasarDato.putExtra("Llamarlado2", resultlado2);
+        startActivity(pasarDato);
+
+    }
+
+    public void VamosaGoogle(View view) {
+        Intent abrirGoogle = new Intent(Intent.ACTION_VIEW);
+        abrirGoogle.setData(Uri.parse("http://www.google.com"));
+        startActivity(abrirGoogle);
+
+    }
+
+    public void VamosaLlamada(View view) {
+        Intent abrirGoogle = new Intent(Intent.ACTION_VIEW);
+        abrirGoogle.setData(Uri.parse("http://www.google.com"));
+        startActivity(abrirGoogle);
     }
 }
