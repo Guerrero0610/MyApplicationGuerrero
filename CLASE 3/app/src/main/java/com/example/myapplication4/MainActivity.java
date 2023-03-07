@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.RemoteActionCompatParcelizer;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,7 +19,7 @@ EditText Lado1, Lado2;
 
 TextView Calcular;
 
-Button Bottones;
+Button Bottones, BuscarG, Llamar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,8 @@ Button Bottones;
         Lado2 = findViewById(R.id.LAdotwo);
         Calcular = findViewById(R.id.Calculemos);
         Bottones = findViewById(R.id.Darle);
-
+        BuscarG = findViewById(R.id.Busca);
+        Llamar = findViewById(R.id.Llamamos);
 
     }
 
