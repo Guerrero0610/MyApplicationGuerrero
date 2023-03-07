@@ -21,6 +21,8 @@ TextView Calcular;
 
 Button Bottones, BuscarG, Llamar;
 
+String Numero = "6045109000";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +59,7 @@ Button Bottones, BuscarG, Llamar;
             @Override
             public void onClick(View view) {
                 Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
-                VamosaLlamada.setData(Uri.parse("tel" + Llamar));
+                VamosaLlamada.setData(Uri.parse("tel" + Numero));
                     if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
                         startActivity(VamosaLlamada);
                     }
@@ -113,10 +115,5 @@ Button Bottones, BuscarG, Llamar;
         startActivity(abrirGoogle);
 
     }
-
-    public void VamosaLlamada(View view) {
-        Intent abrirGoogle = new Intent(Intent.ACTION_VIEW);
-        abrirGoogle.setData(Uri.parse("http://www.google.com"));
-        startActivity(abrirGoogle);
-    }
+    
 }
