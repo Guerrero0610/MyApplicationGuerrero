@@ -15,19 +15,20 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 String TAG = "Depuracion";
 
-EditText Lado1, Lado2;
+EditText IngresaPrimero, IngresaSegundo;
 
 TextView Calcular;
 
 Button Bottones, BuscarG, Llamar;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
         Log.i(TAG, "Estoy en OnCreate");
-        Lado1 = findViewById(R.id.LadoOne);
-        Lado2 = findViewById(R.id.LAdotwo);
+        IngresaPrimero = findViewById(R.id.IngreseOne);
+        IngresaSegundo = findViewById(R.id.Ingresetwo);
         Calcular = findViewById(R.id.Calculemos);
         Bottones = findViewById(R.id.Darle);
         BuscarG = findViewById(R.id.Busca);
@@ -35,12 +36,16 @@ Button Bottones, BuscarG, Llamar;
 
     }
 
-
-
     @Override
     protected void onStart() {
         super.onStart();
         Log.i(TAG, "Entré a OnStart");
+        Calcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
