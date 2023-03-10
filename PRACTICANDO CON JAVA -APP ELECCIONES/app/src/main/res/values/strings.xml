@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ELECCIONES 2023 - ALCALDE ITUANGO</string>
+    <string name="Ingrese_nom">Nombre:</string>
+    <string name="Ingrese_cc">Identificacion:</string>
+    <string name="Ingrese_edad">Edad:</string>
+    <string name="Linea"></string>
+</resources>

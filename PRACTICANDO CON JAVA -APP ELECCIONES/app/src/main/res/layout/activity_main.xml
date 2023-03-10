@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:id="@+id/APP_LADOS"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textAlignment="center" >
+
+    </TextView>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Ingrese_nom"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/Linea1"
+            android:text="@string/Linea"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Ingrese_cc"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/Linea2"
+            android:text="@string/Linea"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Ingrese_edad"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/Linea3"
+            android:text="@string/Linea"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>
