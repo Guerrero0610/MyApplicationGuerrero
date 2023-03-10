@@ -4,16 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@mipmap/definitiva"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:id="@+id/APP_LADOS"
-        android:text="@string/app_name"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="@string/TITULO"
+        android:textStyle="bold|normal"
+        android:textColor="@color/black"
+        android:textSize="25sp"
         android:textAlignment="center" >
 
     </TextView>
@@ -28,6 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Ingrese_nom"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="20sp"></TextView>
 
@@ -39,6 +43,8 @@
             android:layout_weight="2"
             android:id="@+id/Linea1"
             android:text="@string/Linea"
+            android:textStyle="normal"
+            android:textColor="@color/black"
             android:textAlignment="center">
 
         </EditText>
@@ -54,6 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Ingrese_cc"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="20sp"></TextView>
 
@@ -64,7 +72,9 @@
             android:layout_marginLeft="80sp"
             android:layout_weight="2"
             android:id="@+id/Linea2"
-            android:text="@string/Linea"
+            android:text="@string/Linea2"
+            android:textStyle="normal"
+            android:textColor="@color/black"
             android:textAlignment="center">
 
         </EditText>
@@ -80,6 +90,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/Ingrese_edad"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="20sp"></TextView>
 
@@ -90,10 +102,61 @@
             android:layout_marginLeft="80sp"
             android:layout_weight="2"
             android:id="@+id/Linea3"
-            android:text="@string/Linea"
+            android:text="@string/Linea3"
+            android:textStyle="normal"
+            android:textColor="@color/black"
             android:textAlignment="center">
 
         </EditText>
     </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Ingresar_1"
+            android:text="@string/Boton1"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Ingresar_Admi"
+            android:text="@string/Boton2"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="273dp"
+            android:layout_height="114dp"
+            app:srcCompat="@mipmap/ituango2" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
