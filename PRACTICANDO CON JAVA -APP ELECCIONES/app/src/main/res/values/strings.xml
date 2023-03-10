@@ -6,7 +6,9 @@
     <string name="Ingrese_edad">Edad:</string>
     <string name="Linea"></string>
     <string name="Linea2"></string>
+    <string name="Linea22"></string>
     <string name="Linea3"></string>
     <string name="Boton1">INGRESAR</string>
     <string name="Boton2">ADMINISTRADOR</string>
+    <string name="TITULO2">PROCESO DE VOTACION</string>
 </resources>
