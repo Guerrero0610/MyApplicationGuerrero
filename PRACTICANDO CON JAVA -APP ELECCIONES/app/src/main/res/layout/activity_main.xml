@@ -117,13 +117,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
+            android:id="@+id/Ingresar_1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/Ingresar_1"
             android:text="@string/Boton1"
-            android:textSize="20sp"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:textSize="20sp">
 
         </Button>
 
