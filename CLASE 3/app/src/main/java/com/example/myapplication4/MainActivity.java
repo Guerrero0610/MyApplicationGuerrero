@@ -58,6 +58,7 @@ String Numero = "6045109000";
         Llamar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i(TAG,"eSTOY EN LLAMAR");
                 Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
                 VamosaLlamada.setData(Uri.parse("tel" + Numero));
                     if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
@@ -115,5 +116,5 @@ String Numero = "6045109000";
         startActivity(abrirGoogle);
 
     }
-    
+
 }
