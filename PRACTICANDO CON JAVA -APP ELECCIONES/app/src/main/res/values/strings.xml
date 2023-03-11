@@ -13,4 +13,9 @@
     <string name="TITULO2">PROCESO DE VOTACION</string>
     <string name="Imagen_Description">Descripcion</string>
     <string name="TITULO3">INICIA SESION COMO ADMINISTRADOR</string>
+    <string name="USUARIO">USUARIO:</string>
+    <string name="CONTRASEÑA">CONTRASEÑA:</string>
+    <string name="lINEA1"></string>
+    <string name="lINEA2"></string>
+    <string name="IniciarS">INICIAR SESION</string>
 </resources>

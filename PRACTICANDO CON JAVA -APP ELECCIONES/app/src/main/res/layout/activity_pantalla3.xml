@@ -19,5 +19,98 @@
         android:textStyle="bold|normal">
 
     </TextView>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/USUARIO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/LineaOne"
+            android:text="@string/lINEA1"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/CONTRASEÑA"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/LineaTwo"
+            android:text="@string/lINEA2"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/IniciaSesion"
+            android:text="@string/IniciarS"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="273dp"
+            android:layout_height="114dp"
+            app:srcCompat="@mipmap/ituango2" />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

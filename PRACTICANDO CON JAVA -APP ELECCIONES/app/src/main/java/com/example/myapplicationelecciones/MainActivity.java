@@ -15,7 +15,7 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
 
     EditText Linea3, Linea2;
-    Button Boton1;
+    Button Boton1, Boton2;
     int num=17;
 
 
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         Linea2=(EditText)findViewById (R.id.Linea2);
         Boton1=(Button)findViewById(R.id.Ingresar_1);
+        Boton2=(Button)findViewById(R.id.Ingresar_Admi);
         Linea3=findViewById(R.id.Linea3);
 
         Boton1.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                     i.putExtra("Linea22", Linea2.getText().toString());
                     startActivity(i);
                 }
+            }
+        });
+        Boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Pantalla3.class);
+                startActivity(i);
             }
         });
 
