@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MyApplicationElecciones"
         tools:targetApi="31">
         <activity
+            android:name=".Pantalla4"
+            android:exported="false" />
+        <activity
             android:name=".Pantalla3"
             android:exported="false" />
         <activity

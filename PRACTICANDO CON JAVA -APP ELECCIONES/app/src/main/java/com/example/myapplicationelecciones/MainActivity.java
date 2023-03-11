@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 if ( comparar <= num) {
                     Toast.makeText(MainActivity.this, "Usted no tiene la edad suficiente para votar", Toast.LENGTH_SHORT).show();
 
-                } else if (nume.equals("")) {
+                } else if (Linea3.equals("")) {
                     Toast.makeText(MainActivity.this, "Debe ingresar un numero", Toast.LENGTH_SHORT).show();
 
                 } else{
