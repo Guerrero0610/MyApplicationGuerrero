@@ -11,11 +11,8 @@ import android.widget.Toast;
 
 public class Pantalla3 extends AppCompatActivity {
 
-    String usu = "admi1";
-    String Contra= "12345";
     Button IniciarS;
     EditText LINEA1, LINEA2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,14 +28,14 @@ public class Pantalla3 extends AppCompatActivity {
                 String usuarioo = LINEA1.getText().toString();
                 String contraaa = LINEA2.getText().toString();
 
-                if ( usu == usuarioo && Contra == contraaa) {
+                if ( usuarioo.equals("admi123") && contraaa.equals("123456")) {
                     Intent i = new Intent(Pantalla3.this, Pantalla4.class);
                     startActivity(i);
 
-                } else if (LINEA1.equals("")) {
+                } else if (usuarioo.equals("")) {
                     Toast.makeText(Pantalla3.this, "Debe ingresar el usuario", Toast.LENGTH_SHORT).show();
 
-                }  else if (LINEA2.equals("")) {
+                }  else if (contraaa.equals("")) {
                 Toast.makeText(Pantalla3.this, "Debe ingresar la contraseña", Toast.LENGTH_SHORT).show();
 
                  }else{
