@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 int comparar = Integer.parseInt(Linea3.getText().toString());
 
                 if ( comparar <= num) {
-                    Toast.makeText(MainActivity.this, "Usted no es mayor de edad", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Usted no tiene la edad suficiente para votar", Toast.LENGTH_SHORT).show();
 
                 } else if (nume.equals("")) {
                     Toast.makeText(MainActivity.this, "Debe ingresar un numero", Toast.LENGTH_SHORT).show();

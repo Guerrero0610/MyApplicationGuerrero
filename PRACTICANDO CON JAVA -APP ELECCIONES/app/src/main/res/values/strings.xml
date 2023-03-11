@@ -12,4 +12,5 @@
     <string name="Boton2">ADMINISTRADOR</string>
     <string name="TITULO2">PROCESO DE VOTACION</string>
     <string name="Imagen_Description">Descripcion</string>
+    <string name="TITULO3">INICIA SESION COMO ADMINISTRADOR</string>
 </resources>
