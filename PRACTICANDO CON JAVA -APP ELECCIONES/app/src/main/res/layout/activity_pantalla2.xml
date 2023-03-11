@@ -62,6 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato1"
             app:srcCompat="@mipmap/votar">
 
         </ImageView>
@@ -71,15 +73,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato2"
             app:srcCompat="@mipmap/votarr">
 
         </ImageView>
 
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
 
@@ -88,6 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato3"
             app:srcCompat="@mipmap/votarrr">
 
         </ImageView>
@@ -97,11 +104,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato4"
             app:srcCompat="@mipmap/votablanco">
 
         </ImageView>
 
     </LinearLayout>
+
     <LinearLayout
         android:gravity="center"
         android:layout_marginTop="5dp"

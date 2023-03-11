@@ -11,4 +11,5 @@
     <string name="Boton1">INGRESAR</string>
     <string name="Boton2">ADMINISTRADOR</string>
     <string name="TITULO2">PROCESO DE VOTACION</string>
+    <string name="Imagen_Description">Descripcion</string>
 </resources>
