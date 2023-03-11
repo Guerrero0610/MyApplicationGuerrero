@@ -1,9 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@mipmap/definitiva4"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Pantalla4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:gravity="center"
+        android:text="@string/TITULO4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|normal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato1"
+            app:srcCompat="@mipmap/votar">
+
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato2"
+            app:srcCompat="@mipmap/votarr">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Linea411"
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/linea41"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/Linea422"
+            android:text="@string/linea42"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato3"
+            app:srcCompat="@mipmap/votarrr">
+
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/Imagen_Description"
+            android:onClick="Candidato4"
+            app:srcCompat="@mipmap/votablanco">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Linea433"
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/linea43"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/Linea444"
+            android:text="@string/linea44"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ituango2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/salirS"
+            android:text="@string/SALIRALMENU"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

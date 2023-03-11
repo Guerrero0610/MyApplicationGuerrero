@@ -18,4 +18,10 @@
     <string name="lINEA1"></string>
     <string name="lINEA2"></string>
     <string name="IniciarS">INICIAR SESION</string>
+    <string name="TITULO4">COMO VAN LAS VOTACIONES PARA LA ALCALDIA</string>
+    <string name="linea41"></string>
+    <string name="linea42"></string>
+    <string name="linea43"></string>
+    <string name="linea44"></string>
+    <string name="SALIRALMENU">CERRAR SESION</string>
 </resources>
