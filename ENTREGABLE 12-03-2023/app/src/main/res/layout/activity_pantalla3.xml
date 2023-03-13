@@ -141,15 +141,29 @@
 
         <EditText
             android:id="@+id/Diasl"
-            android:layout_width="123dp"
-            android:layout_height="wrap_content"
+            android:layout_width="118dp"
+            android:layout_height="56dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="101dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="50dp"
             android:gravity="center"
             android:text="@string/ENDIAS"
-            android:textStyle="italic"/>
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/Muestrame"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="178dp"
+            android:layout_marginEnd="123dp"
+            android:text="@string/VERLO"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+        </Button>
 
 
     </RelativeLayout>
