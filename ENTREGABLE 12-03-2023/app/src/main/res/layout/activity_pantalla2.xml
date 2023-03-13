@@ -121,6 +121,16 @@
 
         </Button>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
@@ -214,6 +224,15 @@
 
         </EditText>
     </LinearLayout>
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:gravity="center"
         android:layout_marginTop="5dp"
@@ -225,6 +244,22 @@
             android:layout_height="match_parent"
             android:id="@+id/VerBebe"
             android:text="@string/VERBEBE"
+            android:textSize="20sp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Recomendar"
+            android:text="@string/RECOMENDACIONES"
             android:textSize="20sp"
             android:textAlignment="center">
 
