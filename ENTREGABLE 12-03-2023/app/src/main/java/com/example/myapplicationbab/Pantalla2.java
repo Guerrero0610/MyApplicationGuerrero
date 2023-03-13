@@ -15,8 +15,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
-    String TAG = "Depuracion";
-    String Numero = "123";
     EditText RecibeNombre, RecibeDias, RecibeGenero, LineaTiempo, LineaPeso, LineaTamaño;
     Button CALCULAR, VERBEBE, TELEFONO;
 
@@ -48,12 +46,9 @@ public class Pantalla2 extends AppCompatActivity {
         TELEFONO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(TAG,"ESTOY EN LLAMAR");
-                Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
-                VamosaLlamada.setData(Uri.parse("tel" + Numero));
-                if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
-                    startActivity(VamosaLlamada);
-                }
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + "123")); // aquí pones el número que quieras llamar
+                startActivity(intent);
             }
         });
         CALCULAR.setOnClickListener(new View.OnClickListener() {
