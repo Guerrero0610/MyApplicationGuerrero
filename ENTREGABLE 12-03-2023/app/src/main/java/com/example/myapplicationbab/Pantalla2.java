@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,8 +15,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
+    String TAG = "Depuracion";
+    String Numero = "123";
     EditText RecibeNombre, RecibeDias, RecibeGenero, LineaTiempo, LineaPeso, LineaTamaño;
-    Button CALCULAR, VERBEBE;
+    Button CALCULAR, VERBEBE, TELEFONO;
 
     int FALTANTES_DIAS = 280, Total;
     String TamañoB, PesoB;
@@ -31,7 +35,7 @@ public class Pantalla2 extends AppCompatActivity {
         LineaPeso = (EditText) findViewById(R.id.lineaP);
         LineaTamaño = (EditText) findViewById(R.id.lineaTam);
         CALCULAR =(Button)findViewById(R.id.calculaPro);
-
+        TELEFONO = (Button)findViewById(R.id.TelUrgencias);
         VERBEBE = (Button)findViewById(R.id.VerBebe);
 
 
@@ -41,6 +45,17 @@ public class Pantalla2 extends AppCompatActivity {
 
         RecibeDatos(Daton, Datod, Datog);
 
+        TELEFONO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG,"ESTOY EN LLAMAR");
+                Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
+                VamosaLlamada.setData(Uri.parse("tel" + Numero));
+                if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
+                    startActivity(VamosaLlamada);
+                }
+            }
+        });
         CALCULAR.setOnClickListener(new View.OnClickListener() {
 
             @Override
