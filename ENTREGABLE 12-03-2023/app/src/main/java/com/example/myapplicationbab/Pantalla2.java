@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,6 @@ public class Pantalla2 extends AppCompatActivity {
     EditText RecibeNombre, RecibeDias, RecibeGenero, LineaTiempo, LineaPeso, LineaTamaño;
     Button CALCULAR, VERBEBE;
 
-    ImageView primero, segundo, tercero, primero1, segundo1, tercero1, primero2, segundo2, tercero2;
     int FALTANTES_DIAS = 280, Total;
     String TamañoB, PesoB;
     @SuppressLint("MissingInflatedId")
@@ -31,15 +31,7 @@ public class Pantalla2 extends AppCompatActivity {
         LineaPeso = (EditText) findViewById(R.id.lineaP);
         LineaTamaño = (EditText) findViewById(R.id.lineaTam);
         CALCULAR =(Button)findViewById(R.id.calculaPro);
-        primero = (ImageView)findViewById(R.id.primero1);
-        primero1 = (ImageView)findViewById(R.id.primero11);
-        primero2 = (ImageView)findViewById(R.id.primero111);
-        segundo = (ImageView)findViewById(R.id.segundo1);
-        segundo1 = (ImageView)findViewById(R.id.segundo11);
-        segundo2 = (ImageView)findViewById(R.id.segundo111);
-        tercero = (ImageView)findViewById(R.id.tercero1);
-        tercero1 = (ImageView)findViewById(R.id.tercero11);
-        tercero2 = (ImageView)findViewById(R.id.tercero111);
+
         VERBEBE = (Button)findViewById(R.id.VerBebe);
 
 
@@ -151,42 +143,12 @@ public class Pantalla2 extends AppCompatActivity {
 
                 String nume = getIntent().getStringExtra("RecibeDias");
                 int comparar = Integer.parseInt(RecibeDias.getText().toString());
-                int ImageId = 0;
 
-                if ( comparar >= 0 && comparar<=31) {
-                    Toast.makeText(Pantalla2.this, "Estoy dentro de condicion", Toast.LENGTH_SHORT).show();
-
-                    ImageId = primero.getId();
-                    Intent t = new Intent(Pantalla2.this, Pantalla3.class);
-                    t.putExtra("primero", ImageId);
-                    startActivity(t);
-
-                } else if (comparar >= 32 && comparar<=62){
-
-
-                }else if (comparar >= 63 && comparar<=93){
-
-
-                }else if (comparar >= 94 && comparar<=124){
-
-
-                }else if (comparar >= 125 && comparar<=155){
-
-
-                }else if (comparar >= 156 && comparar<=186){
-
-
-                }else if (comparar >= 187 && comparar<=217){
-
-
-                }else if (comparar >= 218 && comparar<=248){
-
-
-                }else if (comparar >= 249 && comparar<=280){
-
+                if ( comparar >= 0 && comparar<=280) {
+                    SiguientePag(view);
 
                 }else {
-                    Toast.makeText(Pantalla2.this, "No entre a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "Ya tu bebe ha nacido", Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -200,6 +162,11 @@ public class Pantalla2 extends AppCompatActivity {
         RecibeDias.setText(Datod);
         RecibeGenero.setText(Datog);
 
+    }
+    public void SiguientePag(View view){
+        Intent t = new Intent(Pantalla2.this, Pantalla3.class);
+        t.putExtra("ENDIAS", RecibeDias.getText().toString());
+        startActivity(t);
     }
 
 }

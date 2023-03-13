@@ -24,4 +24,6 @@
     <string name="TELEFONO">LLAMAR A EMERGENCIAS</string>
     <string name="RECOMENDACIONES">RECOMENDACIONES</string>
     <string name="TUBEBE">ASI SE ENCUENTRA TU BEBE AHORA MISMO</string>
+    <string name="DIASLLEVA">En dias Lleva:</string>
+    <string name="ENDIAS"></string>
 </resources>

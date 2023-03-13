@@ -3,10 +3,12 @@ package com.example.myapplicationbab;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Pantalla3 extends AppCompatActivity {
     ImageView primero, segundo, tercero, primero1, segundo1, tercero1, primero2, segundo2, tercero2;
+    EditText ENDIAS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,14 +23,15 @@ public class Pantalla3 extends AppCompatActivity {
         tercero = (ImageView)findViewById(R.id.tercero1);
         tercero1 = (ImageView)findViewById(R.id.tercero11);
         tercero2 = (ImageView)findViewById(R.id.tercero111);
+        ENDIAS = (EditText) findViewById(R.id.Diasl);
 
-        int imagenId = getIntent().getIntExtra("primero", 0);
+        String Recibe = getIntent().getStringExtra("ENDIAS");
 
-        RecibeImagen(imagenId);
+        Recibimos(Recibe);
     }
-    public void RecibeImagen(int imagenId){
+    public void Recibimos(String Recibe){
 
-        primero.setImageResource(imagenId);
+        ENDIAS.setText(Recibe);
 
 
     }
