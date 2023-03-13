@@ -42,7 +42,8 @@ public class Pantalla2 extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             public void run() {
                 Intent intent = new Intent(Pantalla2.this, MainActivity.class);
-                intent.putExtra("Linea411", Candi1);
+                Intent i = new Intent(Pantalla2.this, Pantalla4.class);
+                i.putExtra("linea41", Candi1);
                 startActivity(intent);
             }
         };;handler.postDelayed(runnable, delayMillis);
