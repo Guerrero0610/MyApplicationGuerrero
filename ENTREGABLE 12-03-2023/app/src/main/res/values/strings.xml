@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">My ApplicationBab</string>
+    <string name="app_name">BABY BUMP</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="Dias">Dias de Gestacion: </string>
+    <string name="Genero">¿Ya sabe el Genero?:</string>
+    <string name="NombreLinea"></string>
+    <string name="DiasLinea"></string>
+    <string name="GeneroLinea"></string>
+    <string name="Ingresar">INGRESAR</string>
+    <string name="InfoGenero">Confirma Genero en Camino:</string>
+    <string name="InfoDias">Confirma Dias Gestion:</string>
+    <string name="RecibeNombre"></string>
+    <string name="RecibeDias"></string>
+    <string name="RecibeGenero"></string>
+    <string name="SEGUIMIENTO">SEGUIMIENTO A TU EMBARAZO</string>
+    <string name="CALCULAR">VER PROGRESO</string>
+    <string name="TIEMPO">Faltan:</string>
+    <string name="LineaTiempo"></string>
+    <string name="PESO">Peso: </string>
+    <string name="LineaPeso"></string>
+    <string name="TAMAÑO">Tamaño:</string>
+    <string name="LineaTamaño"></string>
+    <string name="VERBEBE">VER BEBE</string>
+    <string name="TELEFONO">LLAMAR A EMERGENCIAS</string>
 </resources>

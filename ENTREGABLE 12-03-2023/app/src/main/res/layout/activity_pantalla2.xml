@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/fondo"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantalla2">
+
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/SEGUIMIENTO"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:id="@+id/reciben"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:text="@string/RecibeNombre"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="248dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/InfoGenero"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/recibeg"
+            android:text="@string/RecibeGenero"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="251dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/InfoDias"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/recibed"
+            android:text="@string/RecibeDias"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/calculaPro"
+            android:text="@string/CALCULAR"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/TIEMPO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/lineaTiem"
+            android:text="@string/LineaTiempo"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/PESO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/lineaP"
+            android:text="@string/LineaPeso"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/TAMAÑO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_weight="2"
+            android:id="@+id/lineaTam"
+            android:text="@string/LineaTamaño"
+            android:textStyle="italic"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/VerBebe"
+            android:text="@string/VERBEBE"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/TelUrgencias"
+            android:text="@string/TELEFONO"
+            android:textSize="20sp"
+            android:textAlignment="center">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
