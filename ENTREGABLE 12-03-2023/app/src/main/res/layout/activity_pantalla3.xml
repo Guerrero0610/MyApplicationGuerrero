@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@mipmap/primero2"
+    android:background="@mipmap/fondo3"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".Pantalla3">
@@ -23,7 +23,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/primero"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/segundo1"
             android:layout_width="match_parent"
@@ -34,7 +35,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/segundo"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/tercero1"
             android:layout_width="match_parent"
@@ -45,7 +47,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/tercero"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/primero11"
             android:layout_width="match_parent"
@@ -56,7 +59,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/primero1"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/segundo11"
             android:layout_width="match_parent"
@@ -67,7 +71,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/segundo1"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/tercero11"
             android:layout_width="match_parent"
@@ -78,7 +83,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/tercero1"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/primero111"
             android:layout_width="match_parent"
@@ -89,7 +95,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/primero2"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/segundo111"
             android:layout_width="match_parent"
@@ -100,7 +107,8 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/segundo2"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/tercero111"
             android:layout_width="match_parent"
@@ -111,7 +119,7 @@
             android:layout_marginBottom="0dp"
             android:background="@mipmap/tercero2"
             android:scaleType="centerCrop"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/text_view"
@@ -166,24 +174,24 @@
         </Button>
 
         <TextView
-            android:layout_width="206dp"
-            android:layout_height="180dp"
+            android:id="@+id/informame"
+            android:layout_width="185dp"
+            android:layout_height="194dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="469dp"
+            android:layout_marginTop="497dp"
             android:layout_marginEnd="15dp"
+            android:ellipsize="end"
+            android:maxLines="7"
             android:text="@string/InfoBebe"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="italic"
-            android:maxLines="7"
-            android:ellipsize="end"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
 
     </RelativeLayout>
-
-
 
 
 </LinearLayout>
