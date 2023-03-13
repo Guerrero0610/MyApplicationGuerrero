@@ -3,6 +3,7 @@ package com.example.myapplicationbab;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +15,7 @@ import android.widget.Toast;
 public class Pantalla3 extends AppCompatActivity {
     ImageView primero, segundo, tercero, primero1, segundo1, tercero1, primero2, segundo2, tercero2;
     EditText ENDIAS;
-    Button VERLO;
+    Button VERLO, REGRESAR2;
     TextView InfoBebe;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,11 +35,18 @@ public class Pantalla3 extends AppCompatActivity {
         ENDIAS = (EditText) findViewById(R.id.Diasl);
         VERLO = (Button)findViewById(R.id.Muestrame);
         InfoBebe = (TextView)findViewById(R.id.informame);
+        REGRESAR2 = (Button)findViewById(R.id.regresa2);
 
         String Recibe = getIntent().getStringExtra("ENDIAS");
 
         Recibimos(Recibe);
-
+        REGRESAR2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent p = new Intent(Pantalla3.this, Pantalla2.class);
+                startActivity(p);
+            }
+        });
         VERLO.setOnClickListener(new View.OnClickListener() {
 
             @Override

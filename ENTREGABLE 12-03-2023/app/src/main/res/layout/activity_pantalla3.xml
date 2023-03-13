@@ -190,6 +190,20 @@
             android:textStyle="italic"
             android:visibility="gone" />
 
+        <Button
+            android:id="@+id/regresa2"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="678dp"
+            android:layout_marginEnd="221dp"
+            android:text="@string/REGRESAR2"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+        </Button>
+
 
     </RelativeLayout>
 

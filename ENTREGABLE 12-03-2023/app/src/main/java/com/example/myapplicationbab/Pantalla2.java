@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
     EditText RecibeNombre, RecibeDias, RecibeGenero, LineaTiempo, LineaPeso, LineaTamaño;
-    Button CALCULAR, VERBEBE, TELEFONO;
+    Button CALCULAR, VERBEBE, TELEFONO, REGRESAR1;
 
     int FALTANTES_DIAS = 280, Total;
     String TamañoB, PesoB;
@@ -35,6 +35,7 @@ public class Pantalla2 extends AppCompatActivity {
         CALCULAR =(Button)findViewById(R.id.calculaPro);
         TELEFONO = (Button)findViewById(R.id.TelUrgencias);
         VERBEBE = (Button)findViewById(R.id.VerBebe);
+        REGRESAR1 = (Button)findViewById(R.id.regresa1);
 
 
         String Daton= getIntent().getStringExtra("RecibeNombre");
@@ -42,12 +43,18 @@ public class Pantalla2 extends AppCompatActivity {
         String Datog= getIntent().getStringExtra("RecibeGenero");
 
         RecibeDatos(Daton, Datod, Datog);
-
+        REGRESAR1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent p = new Intent(Pantalla2.this, MainActivity.class);
+                startActivity(p);
+            }
+        });
         TELEFONO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + "123")); // aquí pones el número que quieras llamar
+                intent.setData(Uri.parse("tel:" + "123"));
                 startActivity(intent);
             }
         });

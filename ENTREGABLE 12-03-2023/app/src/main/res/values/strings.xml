@@ -22,7 +22,8 @@
     <string name="LineaTamaño"></string>
     <string name="VERBEBE">VER BEBE</string>
     <string name="TELEFONO">LLAMAR A EMERGENCIAS</string>
-    <string name="RECOMENDACIONES">RECOMENDACIONES</string>
+    <string name="REGRESAR1">REGRESAR A INICIO</string>
+    <string name="REGRESAR2">REGRESAR</string>
     <string name="TUBEBE">ASI SE ENCUENTRA TU BEBE AHORA MISMO</string>
     <string name="DIASLLEVA">En dias tu bebe lleva:</string>
     <string name="ENDIAS"></string>
