@@ -29,11 +29,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                String uno = NombreLinea.getText().toString();
+                String dos = DiasLinea.getText().toString();
+                String tres = GeneroLinea.getText().toString();
+
+                if ( !uno.isEmpty() && !dos.isEmpty() && !tres.isEmpty()) {
                     Intent i = new Intent(MainActivity.this, Pantalla2.class);
                     i.putExtra("RecibeNombre", NombreLinea.getText().toString());
                     i.putExtra("RecibeDias", DiasLinea.getText().toString());
                     i.putExtra("RecibeGenero", GeneroLinea.getText().toString());
                     startActivity(i);
+
+
+                } else {
+                    Toast.makeText(MainActivity.this, "Por Favor Llenar Todos Los Campos", Toast.LENGTH_SHORT).show();
+
+                }
+
 
             }
         });
