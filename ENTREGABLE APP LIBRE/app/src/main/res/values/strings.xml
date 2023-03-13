@@ -1,12 +1,4 @@
 <resources>
-    <string name="app_name">My ApplicationMujer</string>
-    <string name="Nombre">Nombre:</string>
-    <string name="Dias">Dias de Gestacion: </string>
-    <string name="Genero">¿Ya sabe el Genero?:</string>
-    <string name="NombreLinea"></string>
-    <string name="DiasLinea"></string>
-    <string name="GeneroLinea"></string>
-    <string name="Ingresar">INGRESAR</string>
-
+    <string name="app_name">My ApplicationBaby</string>
 
 </resources>
