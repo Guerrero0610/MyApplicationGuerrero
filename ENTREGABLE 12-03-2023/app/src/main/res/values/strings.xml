@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BABY BUMP</string>
-    <string name="Nombre">Nombre:</string>
+    <string name="Nombre">Tu Nombre:</string>
     <string name="Dias">Dias de Gestacion: </string>
     <string name="Genero">¿Ya sabe el Genero?:</string>
     <string name="NombreLinea"></string>
@@ -23,4 +23,5 @@
     <string name="VERBEBE">VER BEBE</string>
     <string name="TELEFONO">LLAMAR A EMERGENCIAS</string>
     <string name="RECOMENDACIONES">RECOMENDACIONES</string>
+    <string name="TUBEBE">ASI SE ENCUENTRA TU BEBE AHORA MISMO</string>
 </resources>

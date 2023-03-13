@@ -125,7 +125,7 @@ public class Pantalla2 extends AppCompatActivity {
                     Toast.makeText(Pantalla2.this, "TERCER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else {
-                    Toast.makeText(Pantalla2.this, "El bebe ya debió nacer, sino es así acuda al Médico Urgentemente", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "El bebe ya debió nacer, sino es así acuda al Médico URGENTEMENTE", Toast.LENGTH_SHORT).show();
                 }
 
             }
