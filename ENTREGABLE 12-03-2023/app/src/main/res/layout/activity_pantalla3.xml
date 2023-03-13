@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@mipmap/fondo"
+    android:background="@mipmap/primero2"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".Pantalla3">
@@ -131,8 +131,8 @@
             android:layout_height="53dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="102dp"
-            android:layout_marginEnd="172dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="138dp"
             android:text="@string/DIASLLEVA"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -145,8 +145,8 @@
             android:layout_height="56dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="99dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="43dp"
             android:gravity="center"
             android:text="@string/ENDIAS"
             android:textStyle="italic" />
@@ -157,14 +157,29 @@
             android:layout_height="68dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="178dp"
-            android:layout_marginEnd="123dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="131dp"
             android:text="@string/VERLO"
             android:textAlignment="center"
             android:textSize="20sp">
 
         </Button>
 
+        <TextView
+            android:layout_width="206dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="469dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/InfoBebe"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:maxLines="7"
+            android:ellipsize="end"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
