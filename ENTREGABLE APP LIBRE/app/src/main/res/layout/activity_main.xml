@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:text="@string/Nombre"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="22sp"></TextView>
 
@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:text="@string/Genero"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"></TextView>
 
@@ -93,7 +93,7 @@
             android:layout_weight="1"
             android:text="@string/Dias"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="22sp"></TextView>
 
