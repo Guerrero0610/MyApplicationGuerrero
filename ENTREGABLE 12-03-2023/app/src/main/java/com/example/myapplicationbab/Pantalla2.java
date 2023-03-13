@@ -14,6 +14,7 @@ public class Pantalla2 extends AppCompatActivity {
     EditText RecibeNombre, RecibeDias, RecibeGenero, LineaTiempo, LineaPeso, LineaTamaño;
     Button CALCULAR;
     int FALTANTES_DIAS = 280, Total;
+    String TamañoB, PesoB;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,49 +45,87 @@ public class Pantalla2 extends AppCompatActivity {
 
                 if ( comparar > 0 && comparar<31) {
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Grano de arena a 1 g";
+                    TamañoB = "Grano de arena a guisante";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "Entramos a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "PRIMER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 } else if (comparar > 31 && comparar<62){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 1.5 g a 7 g";
+                    TamañoB = " De Frijol a 2,5 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "PRIMER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 62 && comparar<93){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 14 g a 60 g";
+                    TamañoB = "3,5 cm a 6 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "PRIMER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 93 && comparar<124){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 90 g a 230 g";
+                    TamañoB = "7,5 cm a 11,5 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "SEGUNDO TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 124 && comparar<155){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 280 g a 510 g";
+                    TamañoB = "13 cm a 16,5 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "SEGUNDO TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 155 && comparar<186){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 660 g a 1,2 kg";
+                    TamañoB = "26 cm a 30 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "SEGUNDO TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 186 && comparar<217){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 1.4 kg a 2,2 kg";
+                    TamañoB = "33 cm a 37 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "TERCER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 217 && comparar<248){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 2.2 kg a 2,7 kg";
+                    TamañoB = "41 cm a 46 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "TERCER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
                 }else if (comparar > 248 && comparar<280){
                     Total = FALTANTES_DIAS - comparar;
+                    PesoB = "Entre 2.5 kg a 3,8 kg";
+                    TamañoB = "47 cm a 51 cm";
+                    LineaPeso.setText(String.valueOf(PesoB));
+                    LineaTamaño.setText(String.valueOf(TamañoB));
                     LineaTiempo.setText(String.valueOf(Total));
-                    Toast.makeText(Pantalla2.this, "No se entro a condicion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Pantalla2.this, "TERCER TRIMESTRE", Toast.LENGTH_SHORT).show();
 
+                }else {
+                    Toast.makeText(Pantalla2.this, "El bebe ya debió nacer, sino es así acuda al Médico Urgentemente", Toast.LENGTH_SHORT).show();
                 }
 
             }
