@@ -21,7 +21,7 @@ TextView Calcular;
 
 Button Bottones, BuscarG, Llamar;
 
-String Numero = "6045109000";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,19 +36,27 @@ String Numero = "6045109000";
         BuscarG = findViewById(R.id.Busca);
         Llamar = findViewById(R.id.Llamamos);
 
+        Bottones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float result = Float.parseFloat(IngresaSegundo.getText().toString()) * Float.parseFloat(IngresaPrimero.getText().toString());
+                String resultlado1 = IngresaPrimero.getText().toString();
+                String resultlado2 = IngresaSegundo.getText().toString();
+                Intent pasarDato = new Intent(MainActivity.this, Pantalla_2.class);
+                pasarDato.putExtra("elResultado", String.valueOf(result));
+                pasarDato.putExtra("elResultado1", resultlado1);
+                pasarDato.putExtra("elResultado2", resultlado2);
+                startActivity(pasarDato);
+
+            }
+        });
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.i(TAG, "Entré a OnStart");
-        Calcular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Parte2EnviarDatos(view);
 
-            }
-        });
         BuscarG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,11 +67,9 @@ String Numero = "6045109000";
             @Override
             public void onClick(View view) {
                 Log.i(TAG,"eSTOY EN LLAMAR");
-                Intent VamosaLlamada = new Intent(Intent.ACTION_DIAL);
-                VamosaLlamada.setData(Uri.parse("tel" + Numero));
-                    if (VamosaLlamada.resolveActivity(getPackageManager()) !=null){
-                        startActivity(VamosaLlamada);
-                    }
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + "6045109000"));
+                startActivity(intent);
             }
         });
     }
@@ -96,18 +102,6 @@ String Numero = "6045109000";
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "Entré a OnDestroy");
-    }
-    public void Parte2EnviarDatos(View view) {
-
-        float result = Float.parseFloat(IngresaSegundo.getText().toString()) * Float.parseFloat(IngresaPrimero.getText().toString());
-        String resultlado1 = IngresaPrimero.getText().toString();
-        String resultlado2 = IngresaSegundo.getText().toString();
-        Intent pasarDato = new Intent(this, Pantalla_2.class);
-        pasarDato.putExtra("elresultado", String.valueOf(result));
-        pasarDato.putExtra("Llamarlado1", resultlado1);
-        pasarDato.putExtra("Llamarlado2", resultlado2);
-        startActivity(pasarDato);
-
     }
 
     public void VamosaGoogle(View view) {

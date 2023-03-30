@@ -2,12 +2,15 @@
     <string name="APP_LADOS">APP LADOS</string>
     <string name="Lado1">Lado 1:</string>
     <string name="Lado2">Lado 2:</string>
-    <string name="IngresaPrimero">Ingrese el lado 1</string>
-    <string name="IngresaSegundo">Ingrese el lado 2</string>
+    <string name="IngresaPrimero"></string>
+    <string name="IngresaSegundo"></string>
     <string name="Bottones">CALCULE</string>
     <string name="Calcular">CLICK PARA CALCULAR LADOS:</string>
     <string name="SeCalculaB">Respuesta</string>
     <string name="SeCalculaA">Respuesta</string>
     <string name="BuscarG">Buscar Google</string>
     <string name="Llamar">Llama</string>
+    <string name="Total">Total</string>
+    <string name="Total2">Segun los lados anteriormente ingresados, el total es:</string>
+    <string name="REGRESAR">REGRESAR</string>
 </resources>
