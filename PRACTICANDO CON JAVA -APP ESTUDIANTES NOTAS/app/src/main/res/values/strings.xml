@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">NOTAS_ESTUDIANTES</string>
+    <string name="app_name">VER NOTAS ESTUDIANTES</string>
+    <string name="TITULO_BLANCO"></string>
+    <string name="INGRESE_USU">Usuario</string>
+    <string name="INGRESE_CONTRA">Contraseña</string>
+    <string name="USUARIO"></string>
+    <string name="CONTRASEÑA"></string>
+    <string name="BOTON_LOGIN">INGRESAR</string>
+
+    <string name="BIENVENIDO">BIENVENIDO PROFESOR@</string>
+    <string name="NOMBRE_ESTUDIANTE">ESTUDIANTE</string>
+    <string name="TRAER_PROFE"></string>
+    <string name="INGRESE_ESTUDIANTE"></string>
+    <string name="NOTA1">NOTA 1:</string>
+    <string name="NOTA2">NOTA 2:</string>
+    <string name="NOTA3">NOTA 3:</string>
+    <string name="NOTA4">NOTA 4:</string>
+    <string name="BOTON_GUARDAR">GUARDAR</string>
+
 </resources>
