@@ -21,6 +21,9 @@
     <string name="NOTA4">NOTA 4:</string>
     <string name="NOTA44"></string>
     <string name="BOTON_GUARDAR">GUARDAR</string>
+    <string name="BOTON_MOSTRAR">MOSTRAR LISTADO</string>
+    <string name="BOTON_CONSULTAR">CONSULTAR ESTUDIANTE</string>
     <string name="BOTON_CERRAR">CERRAR SESION</string>
+    <string name="ESTADO_ESTUDIANTE"></string>
 
 </resources>
