@@ -8,13 +8,19 @@
     <string name="BOTON_LOGIN">INGRESAR</string>
 
     <string name="BIENVENIDO">BIENVENIDO PROFESOR@</string>
-    <string name="NOMBRE_ESTUDIANTE">ESTUDIANTE</string>
+    <string name="NOMBRE_ESTUDIANTE">ESTUDIANTE :</string>
     <string name="TRAER_PROFE"></string>
     <string name="INGRESE_ESTUDIANTE"></string>
+    <string name="NOTAS_INGRESE">A CONTINUACIÓN INGRESE LAS NOTAS DEL ESTUDIANTE</string>
     <string name="NOTA1">NOTA 1:</string>
+    <string name="NOTA11"></string>
     <string name="NOTA2">NOTA 2:</string>
+    <string name="NOTA22"></string>
     <string name="NOTA3">NOTA 3:</string>
+    <string name="NOTA33"></string>
     <string name="NOTA4">NOTA 4:</string>
+    <string name="NOTA44"></string>
     <string name="BOTON_GUARDAR">GUARDAR</string>
+    <string name="BOTON_CERRAR">CERRAR SESION</string>
 
 </resources>

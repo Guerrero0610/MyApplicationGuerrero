@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if ( usuario.equals("Luz Daneira") && contra.equals("1234")) {
                     Intent i = new Intent(MainActivity.this, Pantalla_2.class);
+                    i.putExtra("TRAER_PROFE", USUARIO.getText().toString());
                     startActivity(i);
 
                 } else if (usuario.equals("")) {
