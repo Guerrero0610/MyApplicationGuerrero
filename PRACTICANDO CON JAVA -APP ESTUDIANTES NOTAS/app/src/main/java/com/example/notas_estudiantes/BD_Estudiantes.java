@@ -14,11 +14,12 @@ public class BD_Estudiantes extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase BaseDatos) {
-        BaseDatos.execSQL("create table estudiante(Nombre text, Nota1 int, Nota2 int, Nota3 int, Nota4 int)");
+        BaseDatos.execSQL("create table estudiante (Nombre text, Nota1 int, Nota2 int, Nota3 int, Nota4 int)");
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase BaseDatos, int i, int i1) {
+        BaseDatos.execSQL("DROP TABLE estudiante");
+        onCreate(BaseDatos);
     }
 }

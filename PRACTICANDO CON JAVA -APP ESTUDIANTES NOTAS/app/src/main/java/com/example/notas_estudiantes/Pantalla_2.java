@@ -3,6 +3,7 @@ package com.example.notas_estudiantes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -29,9 +30,34 @@ public class Pantalla_2 extends AppCompatActivity {
         NOTA33 = (EditText)findViewById(R.id.nota3);
         NOTA44 = (EditText)findViewById(R.id.nota4);
         TRAER_PROFE = (TextView) findViewById(R.id.Trae_profe);
+        BOTON_GUARDAR =(Button)findViewById(R.id.BotonG);
+        BOTON_MOSTRAR =(Button)findViewById(R.id.BotonM);
+        BOTON_CONSULTAR =(Button)findViewById(R.id.BotonCo);
+        BOTON_CERRAR =(Button)findViewById(R.id.BotonC);
+
         String DatoP= getIntent().getStringExtra("TRAER_PROFE");
 
         RecibeProfe(DatoP);
+
+        BOTON_GUARDAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Resgistrar(view);
+            }
+        });
+        BOTON_CONSULTAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Consultar(view);
+            }
+        });
+        BOTON_CERRAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent n = new Intent(Pantalla_2.this, MainActivity.class);
+                startActivity(n);
+            }
+        });
     }
     public void Resgistrar(View view){
 
@@ -65,17 +91,18 @@ public class Pantalla_2 extends AppCompatActivity {
 
     }
     public void Consultar(View view){
+        Toast.makeText(this,"Estoy En Consultar", Toast.LENGTH_LONG).show();
         BD_Estudiantes Listar = new BD_Estudiantes(this,"BaseDatos", null,1);
-        SQLiteDatabase BasedeDatos = Listar.getWritableDatabase();
+        SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
         String NombreE = INGRESE_ESTUDIANTE.getText().toString();
         if (!NombreE.isEmpty()){
-            Cursor fila = BasedeDatos.rawQuery("select Nota1, Nota2, Nota3, Nota4 from estudiante where Nombre="+NombreE, null);
-            if (fila.moveToFirst()){
+            Cursor fila = BaseDatos.rawQuery("select Nota1,Nota2,Nota3,Nota4 from estudiante where Nombre='$NombreE'", null);
+            if (fila.moveToFirst()==true){
                 NOTA11.setText(fila.getString(0));
                 NOTA22.setText(fila.getString(1));
                 NOTA33.setText(fila.getString(2));
                 NOTA44.setText(fila.getString(3));
-                BasedeDatos.close();
+                BaseDatos.close();
             }
             else{
                 Toast.makeText(this,"No Se Encontro el Usuario, Por Favor Vuelva a Intentarlo", Toast.LENGTH_LONG).show();
