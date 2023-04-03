@@ -8,10 +8,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.lang.reflect.Array;
 
 public class Pantalla_2 extends AppCompatActivity {
 
@@ -56,6 +60,13 @@ public class Pantalla_2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent n = new Intent(Pantalla_2.this, MainActivity.class);
                 startActivity(n);
+            }
+        });
+        BOTON_MOSTRAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Pantalla_3.class);
+                startActivity(intent);
             }
         });
     }
@@ -112,7 +123,6 @@ public class Pantalla_2 extends AppCompatActivity {
     public void RecibeProfe(String DatoP){
 
         TRAER_PROFE.setText(DatoP);
-
-
     }
+
 }

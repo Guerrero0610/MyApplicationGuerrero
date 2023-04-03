@@ -51,7 +51,7 @@
         android:orientation="horizontal">
 
         <ListView
-            android:id="@+id/listView"
+            android:id="@+id/lista"
             android:layout_width="363dp"
             android:layout_height="323dp"
             android:text="@string/VER"
