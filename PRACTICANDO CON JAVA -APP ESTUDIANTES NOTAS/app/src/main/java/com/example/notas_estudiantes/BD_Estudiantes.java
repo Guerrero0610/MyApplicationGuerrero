@@ -19,7 +19,6 @@ public class BD_Estudiantes extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase BaseDatos, int i, int i1) {
-        BaseDatos.execSQL("DROP TABLE estudiante");
-        onCreate(BaseDatos);
+
     }
 }
