@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My ApplicationSQLite1</string>
+    <string name="TITULO">TRABAJO SQLite</string>
+    <string name="BLANCO"></string>
+    <string name="INGRESEC">Ingrese la Cedula:</string>
+    <string name="INGRESEN">Ingrese el Nombre:</string>
+    <string name="INGRESET">Ingrese el Telefono:</string>
+    <string name="LINEAC"></string>
+    <string name="LINEAN"></string>
+    <string name="LINEAT"></string>
+    <string name="BOTON_REGISTRA">REGISTRAR</string>
+    <string name="BOTON_CONSULTA">CONSULTAR</string>
 </resources>
