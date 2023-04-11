@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText LINEAC, LINEAN, LINEAT;
+    EditText LINEAC, LINEAN, LINEAT;
     Button BOTON_REGISTRA, BOTON_CONSULTA;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LINEAN = findViewById(R.id.Nombre);
         LINEAT = findViewById(R.id.Telefono);
         BOTON_REGISTRA = findViewById(R.id.Boton_Registra);
-        BOTON_REGISTRA = findViewById(R.id.Boton_Consulta);
+        BOTON_CONSULTA = findViewById(R.id.Boton_Consulta);
 
         BOTON_REGISTRA.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 Resgistrar(view);
             }
         });
-        BOTON_REGISTRA.setOnClickListener(new View.OnClickListener() {
+        BOTON_CONSULTA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Consultar(view);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void Resgistrar(View view){
-
+        Toast.makeText(this,"Estoy En Registrar", Toast.LENGTH_LONG).show();
         BaseDatos Listar = new BaseDatos(this,"BaseDatos", null, 1);
         SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
         String Cedula = LINEAC.getText().toString();
@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
             registro.put("Telefono", Telefono);
             BaseDatos.insert("usuario", null, registro);
             BaseDatos.close();
-            LINEAC.setText("");
-            LINEAN.setText("");
-            LINEAT.setText("");
+            LINEAC.setText(" ");
+            LINEAN.setText(" ");
+            LINEAT.setText(" ");
             Toast.makeText(this,"Resgistro Almacenado Exitosamente", Toast.LENGTH_LONG).show();
         }
         else {
