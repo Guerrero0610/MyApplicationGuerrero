@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,7 +19,7 @@ import android.widget.Toast;
 import java.lang.reflect.Array;
 
 public class Pantalla_2 extends AppCompatActivity {
-
+    public String  TAG = "consulta";
     EditText NOTA11, NOTA22, NOTA33, NOTA44, INGRESE_ESTUDIANTE;
     TextView TRAER_PROFE;
     Button BOTON_GUARDAR, BOTON_MOSTRAR, BOTON_CONSULTAR, BOTON_CERRAR;
@@ -74,19 +75,20 @@ public class Pantalla_2 extends AppCompatActivity {
 
         BD_Estudiantes Listar = new BD_Estudiantes(this,"BaseDatos", null, 1);
         SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
-        String Nombre = INGRESE_ESTUDIANTE.getText().toString();
+        String Cedula = INGRESE_ESTUDIANTE.getText().toString();
         String Nota1 = NOTA11.getText().toString();
         String Nota2 = NOTA22.getText().toString();
         String Nota3 = NOTA33.getText().toString();
         String Nota4 = NOTA44.getText().toString();
 
-        if (!Nombre.isEmpty() && !Nota1.isEmpty() && !Nota2.isEmpty() && !Nota3.isEmpty() && !Nota4.isEmpty()){
+        if (!Cedula.isEmpty() && !Nota1.isEmpty() && !Nota2.isEmpty() && !Nota3.isEmpty() && !Nota4.isEmpty()){
             ContentValues registro = new ContentValues();
-            registro.put("Nombre", Nombre);
+            registro.put("cedula", Cedula);
             registro.put("Nota1", Nota1);
             registro.put("Nota2", Nota2);
             registro.put("Nota3", Nota3);
             registro.put("Nota4", Nota4);
+            Log.i(TAG,"El registro a guardar es:"+registro);
             BaseDatos.insert("estudiante", null, registro);
             BaseDatos.close();
             INGRESE_ESTUDIANTE.setText("");
@@ -103,12 +105,15 @@ public class Pantalla_2 extends AppCompatActivity {
     }
     public void Consultar(View view){
         Toast.makeText(this,"Estoy En Consultar", Toast.LENGTH_LONG).show();
+
         BD_Estudiantes Listar = new BD_Estudiantes(this,"BaseDatos", null,1);
         SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
-        String NombreE = INGRESE_ESTUDIANTE.getText().toString();
-        if (!NombreE.isEmpty()){
-            Cursor fila = BaseDatos.rawQuery("select Nota1,Nota2,Nota3,Nota4 from estudiante where Nombre='$NombreE'", null);
-            if (fila.moveToFirst()==true){
+        String cedula = INGRESE_ESTUDIANTE.getText().toString();
+        Log.i(TAG,"La cedula es "+cedula);
+        if (!cedula.isEmpty()){
+            Cursor fila = BaseDatos.rawQuery("select Nota1,Nota2,Nota3,Nota4 from estudiante where cedula="+cedula, null);
+            Log.i(TAG,"La consulta "+fila);
+            if (fila.moveToFirst()){
                 NOTA11.setText(fila.getString(0));
                 NOTA22.setText(fila.getString(1));
                 NOTA33.setText(fila.getString(2));

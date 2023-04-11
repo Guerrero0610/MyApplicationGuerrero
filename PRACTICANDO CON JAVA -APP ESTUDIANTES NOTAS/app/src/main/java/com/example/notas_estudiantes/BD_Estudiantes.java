@@ -14,7 +14,7 @@ public class BD_Estudiantes extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase BaseDatos) {
-        BaseDatos.execSQL("create table estudiante (Nombre text, Nota1 int, Nota2 int, Nota3 int, Nota4 int)");
+        BaseDatos.execSQL("create table estudiante (cedula int primary key, Nota1 int, Nota2 int, Nota3 int, Nota4 int)");
     }
 
     @Override
