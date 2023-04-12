@@ -80,6 +80,8 @@ public class Pantalla2 extends AppCompatActivity {
         String Nota3 = NOTA33.getText().toString();
         String Nota4 = NOTA44.getText().toString();
 
+        Calcular(view);
+        
         if (!Cedula.isEmpty() && !Nombre.isEmpty() && !Nota1.isEmpty() && !Nota2.isEmpty() && !Nota3.isEmpty() && !Nota4.isEmpty()){
             ContentValues registro = new ContentValues();
             registro.put("Cedula", Cedula);
