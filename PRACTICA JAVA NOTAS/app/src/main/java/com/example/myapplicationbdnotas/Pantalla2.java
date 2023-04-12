@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
-    EditText INGRESE_IDENTIDAD, INGRESE_ESTUDIANTE, NOTA11, NOTA22, NOTA33, NOTA44;
+    EditText INGRESE_IDENTIDAD, INGRESE_ESTUDIANTE, NOTA11, NOTA22, NOTA33, NOTA44, INGRESA_NOTA_F;
 
     TextView TRAER_PROFE;
 
@@ -34,6 +34,7 @@ public class Pantalla2 extends AppCompatActivity {
         BOTON_GUARDAR = findViewById(R.id.BotonG);
         BOTON_CONSULTAR = findViewById(R.id.BotonCo);
         TRAER_PROFE = findViewById(R.id.Traer_profe);
+        INGRESA_NOTA_F = findViewById(R.id.NotaF);
 
         String DatoP= getIntent().getStringExtra("TRAER_PROFE");
 
@@ -64,6 +65,9 @@ public class Pantalla2 extends AppCompatActivity {
         int nota44 = Integer.parseInt(NOTA44.getText().toString());
 
         total = (nota11 * 0.2) + (nota22 * 0.3) + (nota33 * 0.15) + (nota44 * 0.35);
+
+        INGRESA_NOTA_F.setText((int) total);
+
     }
     public void Resgistrar(View view){
         Toast.makeText(this,"Estoy En Registrar", Toast.LENGTH_LONG).show();
