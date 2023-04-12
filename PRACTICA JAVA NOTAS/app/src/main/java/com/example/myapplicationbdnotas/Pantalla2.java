@@ -9,10 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
     EditText INGRESE_IDENTIDAD, INGRESE_ESTUDIANTE, NOTA11, NOTA22, NOTA33, NOTA44;
+
+    TextView TRAER_PROFE;
 
     Button BOTON_GUARDAR, BOTON_CONSULTAR;
     @Override
@@ -28,6 +31,11 @@ public class Pantalla2 extends AppCompatActivity {
         NOTA44 = findViewById(R.id.nota4);
         BOTON_GUARDAR = findViewById(R.id.BotonG);
         BOTON_CONSULTAR = findViewById(R.id.BotonCo);
+        TRAER_PROFE = findViewById(R.id.Traer_profe);
+
+        String DatoP= getIntent().getStringExtra("TRAER_PROFE");
+
+        RecibeProfe(DatoP);
 
         BOTON_GUARDAR.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +49,10 @@ public class Pantalla2 extends AppCompatActivity {
                 Consultar(view);
             }
         });
+    }
+    public void RecibeProfe(String DatoP){
+
+        TRAER_PROFE.setText(DatoP);
     }
     public void Resgistrar(View view){
         Toast.makeText(this,"Estoy En Registrar", Toast.LENGTH_LONG).show();
