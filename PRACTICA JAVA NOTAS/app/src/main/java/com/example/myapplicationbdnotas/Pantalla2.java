@@ -59,14 +59,6 @@ public class Pantalla2 extends AppCompatActivity {
         TRAER_PROFE.setText(DatoP);
     }
     public void Calcular(View view){
-        int nota11 = Integer.parseInt(NOTA11.getText().toString());
-        int nota22 = Integer.parseInt(NOTA22.getText().toString());
-        int nota33 = Integer.parseInt(NOTA33.getText().toString());
-        int nota44 = Integer.parseInt(NOTA44.getText().toString());
-
-        total = (nota11 * 0.2) + (nota22 * 0.3) + (nota33 * 0.15) + (nota44 * 0.35);
-
-        INGRESA_NOTA_F.setText((int) total);
 
     }
     public void Resgistrar(View view){
@@ -80,8 +72,13 @@ public class Pantalla2 extends AppCompatActivity {
         String Nota3 = NOTA33.getText().toString();
         String Nota4 = NOTA44.getText().toString();
 
-        Calcular(view);
-        
+        int nota11 = Integer.parseInt(NOTA11.getText().toString());
+        int nota22 = Integer.parseInt(NOTA22.getText().toString());
+        int nota33 = Integer.parseInt(NOTA33.getText().toString());
+        int nota44 = Integer.parseInt(NOTA44.getText().toString());
+
+        total = (nota11 * 0.2) + (nota22 * 0.3) + (nota33 * 0.15) + (nota44 * 0.35);
+
         if (!Cedula.isEmpty() && !Nombre.isEmpty() && !Nota1.isEmpty() && !Nota2.isEmpty() && !Nota3.isEmpty() && !Nota4.isEmpty()){
             ContentValues registro = new ContentValues();
             registro.put("Cedula", Cedula);
@@ -90,6 +87,7 @@ public class Pantalla2 extends AppCompatActivity {
             registro.put("Nota2", Nota2);
             registro.put("Nota3", Nota3);
             registro.put("Nota4", Nota4);
+            registro.put("Nota_Final", total);
 
             BaseDatos.insert("usuario", null, registro);
             BaseDatos.close();
@@ -113,13 +111,14 @@ public class Pantalla2 extends AppCompatActivity {
         SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
         String Cedula = INGRESE_IDENTIDAD.getText().toString();
         if (!Cedula.isEmpty()){
-            Cursor fila = BaseDatos.rawQuery("select Nombre,Nota1,Nota2,Nota3,Nota4 from usuario where Cedula="+Cedula, null);
+            Cursor fila = BaseDatos.rawQuery("select Nombre,Nota1,Nota2,Nota3,Nota4,Nota_Final from usuario where Cedula="+Cedula, null);
             if (fila.moveToFirst()==true){
                 INGRESE_ESTUDIANTE.setText(fila.getString(0));
                 NOTA11.setText(fila.getString(1));
                 NOTA22.setText(fila.getString(2));
                 NOTA33.setText(fila.getString(3));
                 NOTA44.setText(fila.getString(4));
+                INGRESA_NOTA_F.setText(fila.getString(5));
                 BaseDatos.close();
             }
             else{
