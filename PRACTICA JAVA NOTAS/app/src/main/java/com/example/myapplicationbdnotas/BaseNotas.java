@@ -12,8 +12,8 @@ public class BaseNotas extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+    public void onCreate(SQLiteDatabase BaseDatos) {
+        BaseDatos.execSQL("create table usuario (Cedula int primary key, Nombre text, Nota1 int, Nota2 int, Nota3 int, Nota4 int)");
     }
 
     @Override
