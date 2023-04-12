@@ -18,6 +18,8 @@ public class Pantalla2 extends AppCompatActivity {
     TextView TRAER_PROFE;
 
     Button BOTON_GUARDAR, BOTON_CONSULTAR;
+
+    double total;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class Pantalla2 extends AppCompatActivity {
 
         RecibeProfe(DatoP);
 
+
         BOTON_GUARDAR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,6 +56,14 @@ public class Pantalla2 extends AppCompatActivity {
     public void RecibeProfe(String DatoP){
 
         TRAER_PROFE.setText(DatoP);
+    }
+    public void Calcular(View view){
+        int nota11 = Integer.parseInt(NOTA11.getText().toString());
+        int nota22 = Integer.parseInt(NOTA22.getText().toString());
+        int nota33 = Integer.parseInt(NOTA33.getText().toString());
+        int nota44 = Integer.parseInt(NOTA44.getText().toString());
+
+        total = (nota11 * 0.2) + (nota22 * 0.3) + (nota33 * 0.15) + (nota44 * 0.35);
     }
     public void Resgistrar(View view){
         Toast.makeText(this,"Estoy En Registrar", Toast.LENGTH_LONG).show();
