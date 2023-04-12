@@ -1,18 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@mipmap/fondo"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:gravity="center"
+        android:text="@string/TITULO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/INGRESE_USU"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/Usuario"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/USUARIO"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/INGRESE_CONTRA"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/Contraseña"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/CONTRASEÑA"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="61sp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Boton_Ingresar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/BOTON_LOGIN"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

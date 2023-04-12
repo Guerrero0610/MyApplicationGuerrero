@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/fondo2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantalla2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="@string/BIENVENIDO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Traer_profe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/TRAER_PROFE"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1"
+            android:text="@string/IDENTIDAD"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/IngreseIdentidad"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/INGRESE_IDENTIDAD"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1"
+            android:text="@string/NOMBRE_ESTUDIANTE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/IngresaEstudiante"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/INGRESE_ESTUDIANTE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/NOTAS_INGRESE"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/NOTA1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/nota1"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/NOTA11"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/NOTA2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/nota2"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/NOTA22"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/NOTA3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/nota3"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/NOTA33"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/NOTA4"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/nota4"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/NOTA44"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:text="@string/NOTA_FINAL"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"></TextView>
+
+        <EditText
+
+            android:id="@+id/NotaF"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="2"
+            android:text="@string/INGRESA_NOTA_F"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </EditText>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="@string/TITULO_BLANCO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BotonG"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/BOTON_GUARDAR"
+            android:textAlignment="center"
+            android:textSize="15sp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BotonCo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/BOTON_CONSULTAR"
+            android:textAlignment="center"
+            android:textSize="15sp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BotonM"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/BOTON_MOSTRAR"
+            android:textAlignment="center"
+            android:textSize="15sp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BotonC"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/BOTON_CERRAR"
+            android:textAlignment="center"
+            android:textSize="15sp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">My ApplicationBDNotas</string>
+    <string name="app_name">VER NOTAS ESTUDIANTES</string>
+    <string name="TITULO_BLANCO"></string>
+    <string name="INGRESE_USU">Usuario</string>
+    <string name="INGRESE_CONTRA">Contraseña</string>
+    <string name="USUARIO"></string>
+    <string name="CONTRASEÑA"></string>
+    <string name="BOTON_LOGIN">INGRESAR</string>
+    <string name="TITULO">SICAU NOTAS</string>
+
+    <string name="BIENVENIDO">BIENVENIDO PROFESOR@</string>
+    <string name="NOTA_FINAL">NOTA FINAL :</string>
+    <string name="INGRESA_NOTA_F"></string>
+    <string name="IDENTIDAD">CEDULA :</string>
+    <string name="INGRESE_IDENTIDAD"></string>
+    <string name="NOMBRE_ESTUDIANTE">ESTUDIANTE :</string>
+    <string name="TRAER_PROFE"></string>
+    <string name="INGRESE_ESTUDIANTE"></string>
+    <string name="NOTAS_INGRESE">A CONTINUACIÓN INGRESE LAS NOTAS DEL ESTUDIANTE</string>
+    <string name="NOTA1">NOTA 1:</string>
+    <string name="NOTA11"></string>
+    <string name="NOTA2">NOTA 2:</string>
+    <string name="NOTA22"></string>
+    <string name="NOTA3">NOTA 3:</string>
+    <string name="NOTA33"></string>
+    <string name="NOTA4">NOTA 4:</string>
+    <string name="NOTA44"></string>
+    <string name="BOTON_GUARDAR">GUARDAR</string>
+    <string name="BOTON_MOSTRAR">MOSTRAR LISTADO</string>
+    <string name="BOTON_CONSULTAR">CONSULTAR ESTUDIANTE</string>
+    <string name="BOTON_CERRAR">CERRAR SESION</string>
+    <string name="LISTA_ESTUDIANTES">LISTA DE ESTUDIANTES</string>
+    <string name="VER"></string>
+    <string name="BOTON_REGRESAR">REGRESAR</string>
 </resources>
