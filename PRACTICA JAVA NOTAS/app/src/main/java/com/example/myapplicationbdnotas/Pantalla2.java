@@ -13,11 +13,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Pantalla2 extends AppCompatActivity {
-    EditText INGRESE_IDENTIDAD, INGRESE_ESTUDIANTE, NOTA11, NOTA22, NOTA33, NOTA44, INGRESA_NOTA_F;
+    EditText INGRESE_IDENTIDAD;
+    EditText INGRESE_ESTUDIANTE;
+    EditText NOTA11;
+    EditText NOTA22;
+    EditText NOTA33;
+    EditText NOTA44,INGRESA_NOTA_F, INGRESE_ESTADO;
+
 
     TextView TRAER_PROFE;
 
     Button BOTON_GUARDAR, BOTON_CONSULTAR;
+    String mensaje1, mensaje2;
 
     double total;
     @Override
@@ -35,6 +42,7 @@ public class Pantalla2 extends AppCompatActivity {
         BOTON_CONSULTAR = findViewById(R.id.BotonCo);
         TRAER_PROFE = findViewById(R.id.Traer_profe);
         INGRESA_NOTA_F = findViewById(R.id.NotaF);
+        INGRESE_ESTADO = findViewById(R.id.Estado);
 
         String DatoP= getIntent().getStringExtra("TRAER_PROFE");
 
@@ -44,13 +52,16 @@ public class Pantalla2 extends AppCompatActivity {
         BOTON_GUARDAR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Calcular(view);
                 Resgistrar(view);
+
             }
         });
         BOTON_CONSULTAR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Consultar(view);
+
             }
         });
     }
@@ -60,6 +71,20 @@ public class Pantalla2 extends AppCompatActivity {
     }
     public void Calcular(View view){
 
+        int nota1 = Integer.parseInt(NOTA11.getText().toString());
+        int nota2 = Integer.parseInt(NOTA22.getText().toString());
+        int nota3 = Integer.parseInt(NOTA33.getText().toString());
+        int nota4 = Integer.parseInt(NOTA44.getText().toString());
+        double Total;
+        Total=(nota1 * 0.2) + (nota2 * 0.3) + (nota3 * 0.15) + (nota4 * 0.35);
+        INGRESA_NOTA_F.setText(String.valueOf(Total));
+        if ( Total >= 0.0 && Total <= 2.9) {
+            mensaje1 = "Perdio";
+            INGRESE_ESTADO.setText(String.valueOf(mensaje1));
+        } else {
+            mensaje2 = "Gano";
+            INGRESE_ESTADO.setText(String.valueOf(mensaje2));
+        }
     }
     public void Resgistrar(View view){
         Toast.makeText(this,"Estoy En Registrar", Toast.LENGTH_LONG).show();
@@ -72,12 +97,6 @@ public class Pantalla2 extends AppCompatActivity {
         String Nota3 = NOTA33.getText().toString();
         String Nota4 = NOTA44.getText().toString();
 
-        int nota11 = Integer.parseInt(NOTA11.getText().toString());
-        int nota22 = Integer.parseInt(NOTA22.getText().toString());
-        int nota33 = Integer.parseInt(NOTA33.getText().toString());
-        int nota44 = Integer.parseInt(NOTA44.getText().toString());
-
-        total = (nota11 * 0.2) + (nota22 * 0.3) + (nota33 * 0.15) + (nota44 * 0.35);
 
         if (!Cedula.isEmpty() && !Nombre.isEmpty() && !Nota1.isEmpty() && !Nota2.isEmpty() && !Nota3.isEmpty() && !Nota4.isEmpty()){
             ContentValues registro = new ContentValues();
@@ -87,7 +106,6 @@ public class Pantalla2 extends AppCompatActivity {
             registro.put("Nota2", Nota2);
             registro.put("Nota3", Nota3);
             registro.put("Nota4", Nota4);
-            registro.put("Nota_Final", total);
 
             BaseDatos.insert("usuario", null, registro);
             BaseDatos.close();
@@ -110,15 +128,16 @@ public class Pantalla2 extends AppCompatActivity {
         BaseNotas Listar = new BaseNotas(this,"BaseDatos", null,1);
         SQLiteDatabase BaseDatos = Listar.getWritableDatabase();
         String Cedula = INGRESE_IDENTIDAD.getText().toString();
+
         if (!Cedula.isEmpty()){
-            Cursor fila = BaseDatos.rawQuery("select Nombre,Nota1,Nota2,Nota3,Nota4,Nota_Final from usuario where Cedula="+Cedula, null);
+            Cursor fila = BaseDatos.rawQuery("select Nombre,Nota1,Nota2,Nota3,Nota4 from usuario where Cedula="+Cedula, null);
             if (fila.moveToFirst()==true){
                 INGRESE_ESTUDIANTE.setText(fila.getString(0));
                 NOTA11.setText(fila.getString(1));
                 NOTA22.setText(fila.getString(2));
                 NOTA33.setText(fila.getString(3));
                 NOTA44.setText(fila.getString(4));
-                INGRESA_NOTA_F.setText(fila.getString(5));
+
                 BaseDatos.close();
             }
             else{

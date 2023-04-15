@@ -28,7 +28,8 @@
     <string name="BOTON_GUARDAR">GUARDAR</string>
     <string name="BOTON_MOSTRAR">MOSTRAR LISTADO</string>
     <string name="BOTON_CONSULTAR">CONSULTAR ESTUDIANTE</string>
-    <string name="BOTON_CERRAR">CERRAR SESION</string>
+    <string name="ESTADO_ESTUDIANTE">ESTADO:</string>
+    <string name="INGRESE_ESTADO"></string>
     <string name="LISTA_ESTUDIANTES">LISTA DE ESTUDIANTES</string>
     <string name="VER"></string>
     <string name="BOTON_REGRESAR">REGRESAR</string>
